@@ -5,59 +5,77 @@
     box-sizing: border-box;
 }
 
-/*Estilo general body*/
+/*Estilo generales*/
 body{
-    
-    text-align: center;
+    height: 100%;
     font-family: 'Castoro Titling', cursive;
     font-family: 'Roboto', sans-serif;
-    background-image: radial-gradient(circle at 4.15% 11.52%, #f0f7ff 0, #b8b9be 50%, #827f6a 100%);
+    background-image: linear-gradient(330deg, #e0497b 0, #ce427e 10%, #b63b7d 20%, #9a3376 30%, #7b2a6a 40%, #591f59 50%, #3a1446 60%, #200b35 70%, #0f0026 80%, #00001b 90%, #000011 100%); 
+    
+ }
+ 
+ h1{
+    
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+    color: darkgoldenrod;
     }
+    
+.logo{
+    width: 8rem;
+}
+
+/*Estilos bootstrap*/
+
+/*Carousel*/
+.slide{
+    margin: 2rem;
+    
+}
+
+.slide img{
+    height: 75vh;
+    object-fit: cover;
+}
+
+
 
 /*Estilos header*/
+
+
 
 header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 10px;
+    align-items: center;
+    
+    
 }
+  
 
 header nav ul{
     list-style: none;
     display: flex;
-    gap: 20px;
-}
-
-header nav ul li{
-    
-    padding: 10px;
-    background-color: #B8B9BE; 
-    border-radius: 100px
+    justify-content: end;
+    gap: 5px;
 
 }
-
-
-
-h1{
-    text-align: center;
-    font-size: 40px;
-    margin: 30px;
-    color: rgb(13, 71, 109);
-    
-    
-}
-    
-
 
 
 header nav ul li a{
     text-decoration: none;
-    color: black;
-    border-color: #b8b9be;
-    font-size: 20px;
-  
-}
+    color: darkgoldenrod;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+a:hover {
+    background: violet;
+    color: white;
+    border-radius: 1.7rem;
+  }
 
 
 
@@ -66,83 +84,97 @@ header nav ul li a{
 
 main {
     text-align: center;
-    font-size: 20px;
-    margin: 50px;
-    padding: 50px;
+    font-size: 1rem;
+    padding: 1rem;
 }
 main p{
-    font-size: 20px;
-    margin: 50px;
-    color: rgb(13, 71, 109);
+    font-size: 1rem;
+    margin: 2rem;
+    color: darkgoldenrod;
     
 }
 
+/*estilos footer*/
  
 footer {
-     font-size: 10px;
-     padding: 50px;
-    color:  rgb(13, 71, 109);
-}
+     font-size: 1rem;
+     text-align: center;
+     padding: 2rem;
+     color: darkgoldenrod;
+    }
 footer h2{
-    color:rgb(13, 71, 109);
+    color: darkgoldenrod;
     margin: 10px;
+    font-size: 1rem;
     
 }
 .iconos{
-    margin: 30px;
+    margin: 1rem;
+    
+}
+.wp-icon{
+    height: 2rem;
+}
+.inst-icon{
+    height: 2rem;
+}
+.fb-icon{
+    height: 2rem;
 }
 
 
 .arriba01 {
     font-size: 20px;
     text-decoration: none;
-    color: rgb(13, 71, 109);
+    color: darkgoldenrod;
+    padding: 10px;
 }
    
 
-
-
-   
 /*Nosotros*/ 
+
 .nosotros{
     text-align: center;
 }
 
+
+
+
+
 /*Productos*/
-
-
+.text-producto{
+    font-size: 2rem;
+}
 
 .container-galeria{
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(2,250px);
     justify-content: center;
-    
-    
+    gap: 20px;
+
 }
+
 
 .orden{
     display: inline-block;
     text-align: justify;
-    color: rgb(13, 71, 109);
+    color: darkgoldenrod;
 
 
 }
 
-.imagenes{
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-}
+
 
 /*contacto*/
 
+
 .contacto{
+    height: 60vh;
     text-align: justify;
     font-size: 15px;    
-    display:inline-block;
-    
- }
+    text-align: center;
+    }
  .nombre{
     margin: 10px;
  }
@@ -151,8 +183,101 @@ footer h2{
     margin:10px;
  }
 
-.container{
-    
-    width: 500px;
+.container-contacto{
+
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+    color: #ce427e;
+    }
+
+
+
+/*Bootstrap productos*/
+
+
+
+.card{
+    margin: 30px;
+   
+
 }
+
+.card img{
+    object-fit: cover;
+}
+
+
+
+
+/*media querie*/
+
+@media screen and (max-width: 600px) {
+ /*Contacto*/
+
+body{
+    height: 70%;
+}
+.container-contacto{
+    width: 100%;
+    
+    
+}
+ .contacto{
+    padding-top: 5rem;
+    
+ }
+
+ header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    }
+
+    header nav ul li a{
+        font-size: 1rem;
+    }
+
+ 
+}
+
+@media screen and (max-width: 800px) {
+    /*Contacto*/
+   
+   body{
+       height: 70%;
+   }
+   .container-contacto{
+       width: 100%;
+       
+       
+   }
+    .contacto{
+       padding-top: 5rem;
+       
+    }
+   
+    header{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       
+       }
+   
+       header nav ul li a{
+           font-size: 1rem;
+       }
+
+   
+    
+    
+   
+    
+   }
+
+
+
+
+    
 
