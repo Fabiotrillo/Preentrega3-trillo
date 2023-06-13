@@ -1,0 +1,32 @@
+//mixins
+
+//flex
+
+@mixin flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    background-color: black;
+}
+    //ajuste de medidas para imagenes
+
+    @mixin ajustarImagen($of, $w, $h) {
+        object-fit: $of;
+        width: $w;
+        height: $h;
+    }
+
+    //mediaqueries
+
+    @mixin responsive ($medida: 480px) {
+        @media screen and(max-width: $medida) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+    
+        }
+     }
+    
+   

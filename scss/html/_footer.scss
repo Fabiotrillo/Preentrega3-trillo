@@ -1,0 +1,33 @@
+@import "../extra/mixin";
+
+
+//Estilos footer
+    .footer {
+        bottom: 0;
+        text-align: center;
+        margin-top: 2rem;
+        
+
+        h2{
+    
+            margin: 10px;
+            font-size: 1rem;
+             }
+
+         .arriba01 {
+                font-size: 1rem;
+                text-decoration: none;
+                padding: 1rem;
+                color: whitesmoke;
+            }
+               
+        .iconos{
+
+
+            &__icon{
+                height: 2rem;
+                margin: 1rem 1rem;
+            }
+        }
+    
+      }

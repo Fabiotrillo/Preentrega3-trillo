@@ -1,0 +1,48 @@
+/*Header*/
+@import "../extra/mixin";
+@import "../extra/vars";
+
+
+/*Estilos header*/
+
+.header{
+    @include flex;
+    @include responsive (480px);
+
+    &__nav{
+
+             ul{
+                list-style: none;
+                display: flex;
+                
+                gap: 5px;
+                }
+
+             a{
+                text-decoration: none;
+                color: $color-texto-principal;
+                padding: 0.5rem;
+                font-size: 1rem; 
+                &:hover{
+                    background: violet;
+                    color: $color-texto-principal;
+                    border-radius: 1.7rem;
+
+             }
+             }
+
+            
+            
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
