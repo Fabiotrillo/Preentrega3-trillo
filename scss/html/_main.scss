@@ -1,25 +1,77 @@
-/*main y Carousel */
+/*main */
 main{
+    
+     //HTML index
 
-    //gral 
-    text-align: center;
-    p{
+     .titulo-index{
+        text-align: justify;
+        margin-left: 10%;
+        text-transform: uppercase;
+        font-weight: 700;
+        
+     }
+     .parrafo-descriptivo{
+        width: 400px;
+        margin-left: 10%;
+        font-weight: 400;
+        font-size: 1.2rem;
         color: $color-texto-principal;
+     }
+
+
+    .contenedor-img{
+        height: 60vh;
+        
+    }
+   .imagen-principal{
+    object-fit: cover;
+    height: 500px;
+    position: relative;
+    left: 30%;
+    bottom: 40%;
+    @include responsive(500px){
+        width: 350px;
+        height:300px;
+        top: 10%;
+        left: 10%;
+    };
+
+    @include responsive(800px){
+        width: 350px;
+        height: 300px;
+        top: 10%;
+    }
+    
+   }
+      
+      
+     
+   
+
+   & h1{
+        font-size: 2rem;
+        text-align: center;
+        color:$color-texto-principal;
+        margin: 2rem;
+        font-weight: 800;
     }
 
 
+   
+   
 
     //HTML nosotros
+    
     .contenedor-texto{
-        height: 65vh;
+       
+        margin: 4rem;
        
         h1{
             font-size: 2rem;
-
-
+            font-weight: 800;
         }
         p{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             
         }
     }
@@ -31,52 +83,43 @@ main{
         
         &__color{
             
-            @extend %border
+            @extend %border;
         }
         
     }
 
 
 
-   // HTML index
-
-   & h1{
-        font-size: 2rem;
-        text-align: center;
-        color:$color-texto-principal;
-        margin: 2rem;
-    }
-
-
-        
-    .carousel-item img {
-        height: 50vh;
-        width: auto;
-        
-        object-fit: fill, cover;
-         }
-
+ 
 
 
     // HTML productos
-    
-    .text-producto{
+   
+    .productos{
 
-        text-align: center;
-        font-size: 2rem;
-        padding: 2rem;
-        color:$color-texto-principal;
 
-    }
-    .orden{ 
-        
+
+
+        &__contenedor{
+            text-align: center;
+
+                h1{
+                    font-weight: 800;
+                    font-size: 2rem;
+                }
+        }
+
+        &__orden{
+            
             display: inline-block;
             text-align: justify;
-            align-items: center;
+            align-items: end;
             color: $color-texto-principal;
-            padding: 3rem;
+            padding: 1rem;
 
+        }
     }
+    
 
 
     .card img{
@@ -85,43 +128,72 @@ main{
 
 
     // HTML CONTACTO
+  
 
     
 
     .contacto{
         
-        text-align: justify;
-        font-size: 15px;    
-        text-align: center;
-        
-                    &__nombre{
-                    margin: 10px;
-                        }
-
-     
-                     &__email{
-                     margin:10px;
-
-                         } 
-     
-     
-                    &__container{
-                        height: 60vh;
+      
+                     &__container{
+                        height: 50vh;
                         display: flex ;
                         flex-direction: row;
                         justify-content: center;
                         align-items: center;
                         color: $color-texto-principal;
+
+                            legend{
+                                margin: 10px 0;
+                            }
+                        }
+        
+                    &__nombre{
+                    margin: 20px 0px;
                         }
 
-    
+     
+                     &__email{
+                     margin: 20px 0px;
+
+                         } 
+
+                    &__botones{
+                        text-align: center;
+                        input{
+                            @extend %border;
+                        }
+                        
+                    }
+     
+
+       
+
+        
     
         
         }
  
-    
-   
+  /*HTML Sucursales*/ 
 
+  
+   
+  .contenedor-sucursales {
+    
+    @include grid(2, 20px);
+  }
+  
+  .tienda {
+    text-align: center;
+
+
+    iframe{
+        width: 300px;
+        height: 300px;
+    }
+  }
+  
+  
 
  
 

@@ -9,7 +9,8 @@
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
     <!--Link css bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!--link css-->
@@ -17,28 +18,55 @@
     <title>Productos - Elexhibidor</title>
 </head>
 <body>
-      <!-- Banner principal-->
-      <header class="header" id="arriba">
-        <img class="logo" src="../img/logo.png" alt="Logo de la empresa">
-        
-        <nav class="header__nav">
-            <ul>
-                <li> <a href="../index.html"> Home</a></li>
-                <li> <a href="../pages/productos.html">Productos</a> </li>
-                <li> <a href="../pages/nosotros.html">Nosotros</a> </li>
-                <li> <a href="../pages/contacto.html">Contacto</a> </li>
-                <li> <a href="../pages/sucursales.html">Sucursales</a> </li>
-            </ul>
-        </nav>
-    </header>
+ 
+ <!-- Banner principal-->
+
+ <header id="arriba" class="header">
+
+  <!-- barra nav bootstrap-->
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-black ">
+    <div class="container">
+      <!--Logo-->
+      <a class="navbar logo" href="../index.html">Elexhibidor</a>
+      
+      <!--Boton resonsive menu-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+
+          <!--botones nav-->
+          <li class="nav-item">
+            <a class="nav-link text-black active " aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black active" aria-current="page" href="../pages/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-black active" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white black" aria-current="page" href="../pages/sucursales.html">Sucursales</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+</header>
 
     <!-- Contenido principal-->
 
-    <main>
+    <main class="productos">
+      <div class="productos__contenedor">
+        
 
-        <p class="text-producto">Nuestros productos</p>
-
-        <div class="orden">
+        <div class="productos__orden">
+          <h1>Nuestros productos!</h1>
             <ul>
                 <li> Pasos para realizar tu comprar</li>
                 <ol> 
@@ -48,13 +76,12 @@
                 </ol>
             </ul>
         </div>
-     
-
-    </main>
+     </div>
+   </main>
 
     <!--Section Productos en venta-->
-    <section>
 
+    <section>
 
     <!--Producto Nº1-->
         <div class="container">
@@ -100,7 +127,7 @@
                 <!--Producto Nº3-->
 
                 
-                <div class="col">
+         <div class="col">
                   <div class="card shadow-sm">
                     <img src="../img/prod03.jpg" class="producto-03" alt="Percha Terciopelo">
                     <div class="card-body">
@@ -134,11 +161,11 @@
   </div>
   </div>
     </div>
-        <h2>Todos los derechos reservados
+        <h2 class="copyright">Todos los derechos reservados
         </h2>
 
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<!--link js bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

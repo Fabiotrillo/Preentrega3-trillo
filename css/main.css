@@ -6,102 +6,134 @@
 
 /*Header*/
 /*Estilos header*/
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: end;
-  background-color: black; }
-  @media screen and (max-width: 480px) {
-    .header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px; } }
-  .header__nav ul {
-    list-style: none;
-    display: flex;
-    gap: 5px; }
-  .header__nav a {
-    text-decoration: none;
-    color: whitesmoke;
-    padding: 0.5rem;
-    font-size: 1rem; }
-    .header__nav a:hover {
-      background: violet;
-      color: whitesmoke;
-      border-radius: 1.7rem; }
+.header .navbar .navbar-toggler {
+  padding: 1px 5px;
+  font-size: 1rem;
+  line-height: 0.3;
+  background-color: orange; }
 
-/*main y Carousel */
+.header .navbar .nav-item a {
+  color: whitesmoke !important; }
+
+.header .navbar .nav-item:hover {
+  color: black;
+  background-color: orange;
+  color: black;
+  border-radius: 1rem;
+  transition: background-color 1s; }
+
+/*main */
 main {
-  text-align: center; }
-  main p {
-    color: whitesmoke; }
-  main .contenedor-texto {
-    height: 65vh; }
-    main .contenedor-texto h1 {
-      font-size: 2rem; }
-    main .contenedor-texto p {
-      font-size: 1.5rem; }
-  main .button {
-    font-size: 1rem;
-    color: whitesmoke;
-    padding: 3rem; }
+  /*HTML Sucursales*/ }
+  main .titulo-index {
+    text-align: justify;
+    margin-left: 10%;
+    text-transform: uppercase;
+    font-weight: 700; }
+  main .parrafo-descriptivo {
+    width: 400px;
+    margin-left: 10%;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: black; }
+  main .contenedor-img {
+    height: 60vh; }
+  main .imagen-principal {
+    object-fit: cover;
+    height: 500px;
+    position: relative;
+    left: 30%;
+    bottom: 40%; }
+    @media screen and (max-width: 500px) {
+      main .imagen-principal {
+        width: 350px;
+        height: 300px;
+        top: 10%;
+        left: 10%; } }
+    @media screen and (max-width: 800px) {
+      main .imagen-principal {
+        width: 350px;
+        height: 300px;
+        top: 10%; } }
   main h1 {
     font-size: 2rem;
     text-align: center;
-    color: whitesmoke;
-    margin: 2rem; }
-  main .carousel-item img {
-    height: 50vh;
-    width: auto;
-    object-fit: fill, cover; }
-  main .text-producto {
-    text-align: center;
-    font-size: 2rem;
-    padding: 2rem;
-    color: whitesmoke; }
-  main .orden {
+    color: black;
+    margin: 2rem;
+    font-weight: 800; }
+  main .contenedor-texto {
+    margin: 4rem; }
+    main .contenedor-texto h1 {
+      font-size: 2rem;
+      font-weight: 800; }
+    main .contenedor-texto p {
+      font-size: 1.2rem; }
+  main .button {
+    font-size: 1rem;
+    color: black;
+    padding: 3rem; }
+  main .productos__contenedor {
+    text-align: center; }
+    main .productos__contenedor h1 {
+      font-weight: 800;
+      font-size: 2rem; }
+  main .productos__orden {
     display: inline-block;
     text-align: justify;
-    align-items: center;
-    color: whitesmoke;
-    padding: 3rem; }
+    align-items: end;
+    color: black;
+    padding: 1rem; }
   main .card img {
     object-fit: cover; }
-  main .contacto {
-    text-align: justify;
-    font-size: 15px;
+  main .contacto__container {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black; }
+    main .contacto__container legend {
+      margin: 10px 0; }
+  main .contacto__nombre {
+    margin: 20px 0px; }
+  main .contacto__email {
+    margin: 20px 0px; }
+  main .contacto__botones {
     text-align: center; }
-    main .contacto__nombre {
-      margin: 10px; }
-    main .contacto__email {
-      margin: 10px; }
-    main .contacto__container {
-      height: 60vh;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      color: whitesmoke; }
+  main .contenedor-sucursales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; }
+    @media screen and (max-width: 540px) {
+      main .contenedor-sucursales {
+        grid-template-columns: 1fr;
+        gap: 0; } }
+    @media screen and (max-width: 800px) {
+      main .contenedor-sucursales {
+        grid-template-columns: 2fr;
+        gap: 0; } }
+  main .tienda {
+    text-align: center; }
+    main .tienda iframe {
+      width: 300px;
+      height: 300px; }
 
 .footer {
-  bottom: 0;
   text-align: center;
   margin-top: 2rem; }
-  .footer h2 {
-    margin: 10px;
-    font-size: 1rem; }
+  .footer .copyright {
+    font-size: 1rem;
+    color: black; }
   .footer .arriba01 {
     font-size: 1rem;
     text-decoration: none;
-    padding: 1rem;
-    color: whitesmoke; }
+    color: black; }
   .footer .iconos__icon {
     height: 2rem;
     margin: 1rem 1rem; }
 
-main .button__color {
-  color: whitesmoke;
+main .button__color, main .contacto__botones input {
+  color: white;
   border-radius: 100px;
   margin: 0.5rem;
   padding: 0.5rem;
@@ -109,16 +141,18 @@ main .button__color {
 
 /*estilos generales*/
 body {
+  height: 100vh !important;
   font-family: 'Castoro Titling', cursive;
   font-family: 'Roboto', sans-serif;
-  background-image: linear-gradient(330deg, #e0497b 0, #ce427e 10%, #b63b7d 20%, #9a3376 30%, #7b2a6a 40%, #591f59 50%, #3a1446 60%, #200b35 70%, #0f0026 80%, #00001b 90%, #000011 100%);
+  background-image: linear-gradient(45deg, #ffd700, #ffa500);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
 .logo {
-  object-fit: contain;
-  width: "";
-  height: "";
-  cursor: pointer; }
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 800; }

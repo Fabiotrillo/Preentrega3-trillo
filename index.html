@@ -9,7 +9,7 @@
      <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <!--Link css bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!--Link de mi css-->
@@ -18,62 +18,64 @@
     
    
 </head>
-<body>
+<body class="index">
 
 <!-- Banner principal-->
-    <header id="arriba" class="header">
-        
-        <img class="logo" src="img/logo.png" alt="Logo de la empresa">
 
-        <nav class="header__nav">
-            <ul>
-                <li> <a href="index.html"> Home</a></li>
-                <li> <a href="pages/productos.html">Productos</a> </li>
-                <li> <a href="pages/nosotros.html">Nosotros</a> </li>
-                <li> <a href="pages/contacto.html">Contacto</a> </li>
-                <li> <a href="pages/sucursales.html">Sucursales</a> </li>
-            </ul>
-        </nav>
-    </header>
+    <header id="arriba" class="header">
+
+    <!-- barra nav bootstrap-->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-black ">
+      <div class="container">
+        <!--Logo-->
+        <a class="navbar logo" href="./index.html">Elexhibidor</a>
+
+        <!--Boton resonsive menu-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+
+            <!--botones nav-->
+            <li class="nav-item">
+              <a class="nav-link text-black active " aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black active" aria-current="page" href="./pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-black active" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white black" aria-current="page" href="./pages/sucursales.html">Sucursales</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+</header>
 
     <!-- Contenido principal-->
 
     <main>
-
-        <!--Carrousel boostrap-->
-
-       
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators ">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/articulo01.jpg" class="img-cover d-block w-100 object-fit-cover" alt="primer articulo">
-                <div class="carousel-caption d-none d-md-block">
-               </div>
-              </div>
-              <div class="carousel-item w50">
-                <img src="img/articulo02.jpg" class="img-fluid d-block w-100" alt="Segundo articulo">
-              </div>
-              <div class="carousel-item">
-                <img src="img/articulo03.jpg" class="d-block w-100 " alt="tercer articulo">
-                <div class="carousel-caption d-none d-md-block">
-                
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+      
+      <!--Titulo principal-->
+      <h1 class="titulo-index">Elexhibidor<br>Equipamientos comerciales</br></h1>
+      
+      <!--parrafo descriptivo del exhibidor-->
+      <p class="parrafo-descriptivo">Somos tu solución integral para equipamientos comerciales. Ofrecemos maniquíes, perchas y accesorios de alta calidad para potenciar tu negocio.</p>
+      
+      <!--imagen principal -->
+      <div class="contenedor-img">
+        <img class="imagen-principal" src="img/imagen-principal.png" alt="imagen principal articulo percha de madera">
+      </div>
+      
+      
       
 
     </main>
@@ -85,12 +87,12 @@
         
         <!--img logo redes-->
     <div class="iconos">
-        <a href="#" target="_blank"><img class="iconos__icon" src="img/iconowp.png" alt="iconowp"></a>
-        <a href="#" target="_blank"><img class="iconos__icon" src="img/iconoint.png" alt="iconoinst"></a>
-        <a href="#" target="_blank"><img class="iconos__icon" src="img/iconofb.png" alt="iconofb"></a>
+        <a href="#" target="_blank"><img class="iconos__icon" src="./img/iconowp.png" alt="iconowp"></a>
+        <a href="#" target="_blank"><img class="iconos__icon" src="./img/iconoint.png" alt="iconoinst"></a>
+        <a href="#" target="_blank"><img class="iconos__icon" src="./img/iconofb.png" alt="iconofb"></a>
     </div>
     
-        <h2>Todos los derechos reservados</h2>
+        <h2 class="copyright">Todos los derechos reservados</h2>
 
         
         

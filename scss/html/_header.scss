@@ -5,42 +5,36 @@
 
 /*Estilos header*/
 
-.header{
-    @include flex;
-    @include responsive (480px);
+.header {
+   
+    
+    .navbar{
+        
+        .navbar-toggler{
+            padding: 1px 5px;
+            font-size: 1rem;
+            line-height: 0.3;
+            background-color: $color-bg-secundario;
+        }
+        .nav-item a{
+            color: $color-texto-terciario !important;
+        
+        }
+       
 
-    &__nav{
+       .nav-item:hover{ 
+        color: $color-texto-principal;
+        background-color: $color-bg-secundario;
+        color: $color-texto-principal;
+        border-radius: 1rem;
+        transition: background-color 1s;
+       }
 
-             ul{
-                list-style: none;
-                display: flex;
-                
-                gap: 5px;
-                }
-
-             a{
-                text-decoration: none;
-                color: $color-texto-principal;
-                padding: 0.5rem;
-                font-size: 1rem; 
-                &:hover{
-                    background: violet;
-                    color: $color-texto-principal;
-                    border-radius: 1.7rem;
-
-             }
-             }
-
-            
-            
-
-
+       
     }
-}
 
-
-
-
+    
+        }
 
 
 
