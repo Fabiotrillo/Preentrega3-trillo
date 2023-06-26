@@ -8,6 +8,9 @@ main{
         margin-left: 10%;
         text-transform: uppercase;
         font-weight: 700;
+        @include responsive(500px){
+            text-align: center;
+        };
         
      }
      .parrafo-descriptivo{
@@ -16,6 +19,9 @@ main{
         font-weight: 400;
         font-size: 1.2rem;
         color: $color-texto-principal;
+        @include responsive(500px){
+            text-align: center;
+        };
      }
 
 
@@ -33,7 +39,7 @@ main{
         width: 350px;
         height:300px;
         top: 10%;
-        left: 10%;
+        left: 15%;
     };
 
     @include responsive(800px){
@@ -98,7 +104,7 @@ main{
     .productos{
 
 
-
+        
 
         &__contenedor{
             text-align: center;

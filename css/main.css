@@ -30,12 +30,18 @@ main {
     margin-left: 10%;
     text-transform: uppercase;
     font-weight: 700; }
+    @media screen and (max-width: 500px) {
+      main .titulo-index {
+        text-align: center; } }
   main .parrafo-descriptivo {
     width: 400px;
     margin-left: 10%;
     font-weight: 400;
     font-size: 1.2rem;
     color: black; }
+    @media screen and (max-width: 500px) {
+      main .parrafo-descriptivo {
+        text-align: center; } }
   main .contenedor-img {
     height: 60vh; }
   main .imagen-principal {
@@ -49,7 +55,7 @@ main {
         width: 350px;
         height: 300px;
         top: 10%;
-        left: 10%; } }
+        left: 15%; } }
     @media screen and (max-width: 800px) {
       main .imagen-principal {
         width: 350px;
