@@ -1,0 +1,42 @@
+/*Header*/
+@import "../extra/mixin";
+@import "../extra/vars";
+
+
+/*Estilos header*/
+
+.header {
+   
+    
+    .navbar{
+        
+        .navbar-toggler{
+            padding: 1px 5px;
+            font-size: 1rem;
+            line-height: 0.3;
+            background-color: $color-bg-secundario;
+        }
+        .nav-item a{
+            color: $color-texto-terciario !important;
+        
+        }
+       
+
+       .nav-item:hover{ 
+        color: $color-texto-principal;
+        background-color: $color-bg-secundario;
+        color: $color-texto-principal;
+        border-radius: 1rem;
+        transition: background-color 1s;
+       }
+
+       
+    }
+
+    
+        }
+
+
+
+
+
